@@ -30,9 +30,9 @@ import (
 	"github.com/docker/distribution/registry"
 	_ "github.com/docker/distribution/registry/auth/htpasswd"           // used for docker test registry
 	_ "github.com/docker/distribution/registry/storage/driver/inmemory" // used for docker test registry
-	auth "github.com/oras-project/oras-go/pkg/auth/docker"
 	"github.com/phayes/freeport"
 	"golang.org/x/crypto/bcrypt"
+	auth "oras.land/oras-go/pkg/auth/docker"
 	"sigs.k8s.io/yaml"
 
 	ociRegistry "helm.sh/helm/v3/internal/experimental/registry"
